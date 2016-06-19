@@ -1,0 +1,430 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Lato Ligth";
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url('../fonts/Lato-Hairline.ttf');
+
+}
+
+@font-face {
+    font-family: "Lato HairlineItalic";
+    src: url('../fonts/Lato-HairlineItalic.ttf');
+}
+
+@font-face {
+    font-family: "Times New Roman Bold";
+    src: url('../fonts/TimesNewRomanBold.ttf');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.b-page {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.fixed {
+    width: 1180px;
+    margin: auto
+}
+
+.b-food-banner {
+    background-color: #fff;
+    background-image: url(../img/food_banner.png);
+    background-size: 100%;
+    width: 100%;
+    height: 880px;
+
+    -webkit-box-shadow: inset -2px -97px 14px -2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset -2px -97px 14px -2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset -2px -97px 14px -2px rgba(0, 0, 0, 0.16);
+}
+
+.b-food-banner-nav__logo {
+    float: left;
+}
+
+.b-food-banner-nav__menu {
+    font-size: 14px;
+    font-family: "Lato Bold";
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+.b-food-banner-nav__login-link {
+    margin-right: 34px;
+}
+
+.b-food-banner-nav__signip-link {
+    margin-right: 22px;
+}
+
+.b-food-banner-slogan {
+    margin: auto;
+    position: relative;
+    top: 400px;
+    color: #fff;
+    text-align: center;
+    font-family: "Lato Bold";
+}
+
+.b-food-banner-slogan__recipes {
+    font-size: 100px;
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+    margin-right: 50px;
+    position: relative;
+    left: -45px;
+}
+
+.b-food-banner-slogan__get-started {
+    font-size: 18px;
+
+    max-width: 340px;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.b-food-banner-slogan__note {
+    font-size: 14px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.b-food-banner-slogan__note_underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.motivation {
+	background-color: #fff;
+}
+
+.b-motivation {
+    margin-top: 100px;
+    height: 435px;   
+}
+
+.b-motivation__section {
+    float: left;
+    display: inline-block;
+    width: 360px;
+    margin-right: 40px;
+}
+
+.b-motivation__section:nth-child(3) {
+    margin-right: 0px;
+}
+
+.b-motivation__icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.b-motivation__title {
+    font-family: "Lato Bold";
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.b-motivation__divider {
+    width: 90px;
+    border: 1px solid #f57365;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+.b-motivation__text {
+    font-family: "Lato Ligth";
+    font-size: 16px;
+    text-align: center;
+    line-height: 17px;
+}
+
+.b-content {
+    height: 880px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.b-content-app__iphone {
+    width: 540px;
+    float: left;
+    height: 100%;
+}
+
+.b-content-app__iphone-bottom {
+    position: relative;
+    bottom: -117px;
+}
+
+.b-content-app-description {
+    width: 540px;
+    height: 100%;
+    float: right;
+}
+
+.b-content-app-description__title {
+    font-family: "Lato Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 185px;
+}
+
+.b-content-app-description__divider {
+    width: 90px;
+    border: 1px solid #f57365;
+    margin-bottom: 23px;
+}
+
+.b-content-app-description__text {
+    font-family: "Lato Ligth";
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.b-content-app-description__text-distance {
+    margin-bottom: 45px;
+}
+
+.b-slider {
+    width: 100%;
+    height: 460px;
+    background-color: #4a3949;
+}
+
+.b-slider-frame {
+    height: 380px;
+    background-image: url(../img/slider-bg.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    color: #bdb8bc;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.b-slider-frame__avatar {
+    margin-bottom: 33px;
+}
+
+.b-slider-frame__review {
+    font-family: "Lato Hairline";
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+
+.b-slider-frame__name {
+    font-family: "Lato HairlineItalic";
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.b-slider-frame-dots {
+    list-style-type: none;
+}
+
+.b-slider-frame-dots__dot {
+    display: inline;
+    margin-bottom: 80px;
+}
+
+.browse-by-cuisine {
+    height: 165px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.browse-by-cuisine__fixed {
+    padding-top: 100px;
+}
+
+.browse-by-cuisine__title {
+    font-family: "Lato Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.browse-by-cuisine__divider {
+    width: 80px;
+    height: 0px;
+    border: 1px solid #f57365;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.b-cuisine {
+    height: 520px;
+    color: #fff;
+
+    background-image: url("../img/food.png");
+    background-repeat: no-repeat;;
+    background-size: 100%;
+    box-sizing: border-box;
+    min-width: 1600px;
+}
+
+.b-cuisine-line {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.b-cuisine-block {
+    width: 20%;
+    min-height: 260px;
+
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.b-cuisine-block__numbers {
+    font-family: "Times New Roman Bold";
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.b-cuisine-block__type {
+    font-family: "Lato Bold";
+    font-size: 36px;
+}
+
+.b-stats {
+    height: 175px;
+    background-color: #fff;
+}
+
+.b-stats-internal {
+    padding-top: 60px;
+}
+
+.b-stats-internal-block {
+    display: inline-block;
+    float: left;
+    margin-right: 130px;
+}
+
+.b-stats-internal-block:last-child {
+    margin-right: 0px;
+}
+
+.b-stats-internal-block__numbers {
+    font-family: "Lato Bold";
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.b-stats-internal-block_description {
+    font-family: "Lato Ligth";
+    font-size: 16px;
+}
+
+.b-footer {
+    height: 55px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    font-family: "Lato Light";
+    color: #bbb;
+    padding-top: 40px;
+}
+
+.b-footer-internal__copyright {
+    float: left;
+}
+
+.b-footer-internal__designedby {
+    float: right;
+}
+
+.b-footer-internal__designedby-link {
+    font-family: "Lato Regular";
+    font-weight: bold;
+    color: #000;
+}
+
